@@ -1,0 +1,17 @@
+services:
+  api:
+    container_name: api
+    build:
+      context: ..
+      dockerfile: ./server/api/Dockerfile
+    volumes:
+      - ./api:/api
+    ports:
+      - "8050:8050"
+    env_file: ./.env
+    networks:
+      - local-network
+
+networks:
+  local-network:
+    driver: bridge

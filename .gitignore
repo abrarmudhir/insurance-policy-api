@@ -1,0 +1,17 @@
+# IDE
+.idea
+.vscode
+
+# PYTHON/POETRY
+__pycache__/
+dist/
+.pytest_cache
+
+# CDK
+.cdk.staging
+cdk.out
+
+*.js
+!jest.config.js
+*.d.ts
+node_modules
